@@ -1,22 +1,22 @@
-
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: white;
+  margin: 0;
+  background-color: white;
 }
 
-
-video{
-  width: 360px;
-  height: 640px;
+video {
+  width: 360px; 
+  height: 640px; /
   z-index: 3;
 }
 
-.intro2{
+.intro2 {
+  position: absolute;
   z-index: 5;
   top: 1vh;
   border-color: deeppink;
   color: greenyellow;
-}
+  cursor: pointer; 
