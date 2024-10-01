@@ -11,4 +11,12 @@ body {
 video{
   width: 360p×;
   height: 640px;
+  z-index: 3;
+}
+
+.intro2{
+  z-index: 5;
+  top: 1vh;
+  border-color: deeppink;
+  color: greenyellow;
 }
