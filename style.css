@@ -1,10 +1,28 @@
+
+@font-face {
+  font-family:"active" ;
+  src: url(font/ReadyActiveTest-Regular.otf);
+}
+
+
+@font-face {
+  font-family:"activel" ;
+  src: url(font/ReadyActiveTest-Light.otf);
+}
+
+
+@font-face {
+  font-family:"activeb" ;
+  src: url(font/ReadyActiveTest-Bold.otf);
+}
+
+
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  width: 100vw;
+  height: 300vh;
   margin: 0;
-  background-color: white;
+  /* background: rgb(149,0,255);
+  background: linear-gradient(90deg, rgba(149,0,255,0.4654236694677871) 0%, rgba(188,253,29,0.6054796918767507) 19%, rgba(39,219,233,0.4514180672268907) 35%, rgba(0,5,255,0.5074404761904762) 47%, rgba(249,3,218,0.4766281512605042) 60%, rgba(233,251,103,0.47102591036414565) 76%, rgba(255,0,0,0.4430147058823529) 100%); */ */
 }
 
 video {
@@ -13,10 +31,60 @@ video {
   z-index: 3;
 }
 
-.intro2 {
-  position: absolute;
+
+h1{
+  font-family: "activel";
+  position: fixed;
   z-index: 5;
-  top: 1vh;
-  border-color: deeppink;
-  color: greenyellow;
-  cursor: pointer; 
+  font-size: 13vh;
+  line-height: 120px;
+ mix-blend-mode:difference;
+  color:rgb(0, 0, 0);
+  margin: 0;
+  top: 5px;
+  left:15px;
+}
+
+
+span{
+
+  font-family:"active";
+
+}
+
+span:hover{
+  font-family:fantasy;
+  font-size: 20vh;
+}
+
+
+.QR1{
+  position: fixed; 
+  height: 80%; 
+  left: 25%;
+}
+
+
+
+.marquee-container {
+  width: 100vw;
+  height:1000vh;
+  overflow: hidden;
+  padding: 10px;
+  position: relative; 
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
