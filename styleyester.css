@@ -1,0 +1,46 @@
+
+@font-face {
+  font-family:"active" ;
+  src: url(font/ReadyActiveTest-Regular.otf);
+}
+
+
+@font-face {
+  font-family:"activel" ;
+  src: url(font/ReadyActiveTest-Light.otf);
+}
+
+
+@font-face {
+  font-family:"activeb" ;
+  src: url(font/ReadyActiveTest-Bold.otf);
+}
+
+
+
+@font-face {
+  font-family:"authentic" ;
+  src: url(font/authentic-sans-condensed-90.woff2);
+}
+body {
+  width: 100vw;
+  height: 1000vh;
+  margin: 0;
+  background-image: url("sparkle.gif");
+  background-repeat: repeat;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
