@@ -146,6 +146,19 @@ p {
   width: 40%;
 }
 
+.spider  {
+  font-family: 'authentic';
+  font-size: 5vh;
+  top: 75vh;
+  left: 45vw;
+  position: absolute;
+  z-index: 20;
+  mix-blend-mode:multiply;
+  width: 40%;
+  transform: rotate(60deg);
+}
+
+
 .intro2{
   position: absolute;
   top: 300vh;
