@@ -71,7 +71,20 @@ span:hover {
 
 
 
+.video-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
 
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
 .question {
 
   font-family: 'authentic';
